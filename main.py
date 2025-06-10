@@ -30,6 +30,6 @@ except Exception as e:
 
 print(response.text)
 if len(sys.argv) > 2 and sys.argv[2] == "--verbose":
-    print(f'User Prompt: {sys.argv[1]}')
+    print(f'User prompt: {sys.argv[1]}')
     print(f'Prompt tokens: {response.usage_metadata.prompt_token_count}')
     print(f'Response tokens: {response.usage_metadata.candidates_token_count}')
